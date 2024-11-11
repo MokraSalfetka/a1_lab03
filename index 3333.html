@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Puzzle z Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="map"></div>
+<div id="buttons">
+    <button id="locateButton">Pobierz lokalizację</button>
+    <button id="downloadMapButton">Generuj puzzle</button>
+</div>
+
+<div id="puzzle-container">
+    <div id="pieces"></div>
+    <div id="board">
+        <div class="board-cell" data-position="0"></div>
+        <div class="board-cell" data-position="1"></div>
+        <div class="board-cell" data-position="2"></div>
+        <div class="board-cell" data-position="3"></div>
+        <div class="board-cell" data-position="4"></div>
+        <div class="board-cell" data-position="5"></div>
+        <div class="board-cell" data-position="6"></div>
+        <div class="board-cell" data-position="7"></div>
+        <div class="board-cell" data-position="8"></div>
+        <div class="board-cell" data-position="9"></div>
+        <div class="board-cell" data-position="10"></div>
+        <div class="board-cell" data-position="11"></div>
+        <div class="board-cell" data-position="12"></div>
+        <div class="board-cell" data-position="13"></div>
+        <div class="board-cell" data-position="14"></div>
+        <div class="board-cell" data-position="15"></div>
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Podgląd zapisanej mapy jako obrazu:</h2>
+        <div id="canvasPreviewContainer"></div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-image@0.4.0/leaflet-image.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
